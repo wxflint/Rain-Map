@@ -1,0 +1,53 @@
+    {
+      module: 'MMM-RAIN-MAP',
+      position: 'bottom_right',
+      header: '',
+      config: {
+        animationSpeedMs: 400,
+        colorScheme: 2,
+        colorizeTime: true,
+        defaultZoomLevel: 8,
+        displayTime: true,
+        displayTimeline: true,
+        displayClockSymbol: true,
+        displayOnlyOnRain: false,
+        extraDelayLastFrameMs: 1000,
+        extraDelayCurrentFrameMs: 3000,
+        markers: [
+          {
+            //ChurchHill
+            lat: 36.52,
+            lng: -82.717,
+            color: 'red'
+          },
+          {
+            //Kingsport
+            lat: 36.72,
+            lng: -82.35,
+            color: 'green'
+          }
+        ],
+        mapPositions: [
+          {
+            lat: 36.52,
+            lng: -82.717,
+            zoom: 9,
+            loops: 1
+          },
+          {
+            lat: 36.72,
+            lng: -82.717,
+            zoom: 6,
+            loops: 2
+          }
+        ],
+        mapUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        mapHeight: '425px',
+        mapWidth: '550px',
+        maxHistoryFrames: -1,
+        maxForecastFrames: -1,
+        substitudeModules: [],
+        updateIntervalInSeconds: 300
+      }
+    },
+   
